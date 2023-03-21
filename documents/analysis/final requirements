@@ -1,0 +1,103 @@
+Book management system:
+Java Desktop Application used for managing a library
+    One window for CRUD operations on Author (firstname, lastname):
+* allows the viewing of all the authors;
+* adding a new author;
+* deleting an existing author;
+* updating an existing author
+
+    One window for CRUD operations on Book (title, description, author):
+* allows the viewing of all the books;
+* adding a new book - and assigning one of the existing authors;
+* deleting an existing book and updating an existing book
+
+    One window for Reviews (book, score, comment):
+* allows the viewing of all the reviews;
+* adding a new review for one of the existing books
+
+
+- IMPLEMENT AUTHOR CREATION
+ As a user I should be able to add a new author with the following details: firstname and lastname. If the creation process is successful
+the system will allocate a unique id to the new vet.
+    The system will validate the following data:
+            - fist name to be not blank and not empty
+            - last name to be not blank and not empty
+If the creation process fails the system will show an appropriate error message.
+
+- IMPLEMENT VIEW ALL AUTHORS
+As a user I should be able to view all the existing authors from the system.
+        I should be able to view a list where each line will contain: id, firstname, lastname.
+
+- IMPLEMENT VIEW AUTHOR BY ID
+As a user I should be able to view all the details of an existing authors by id. If the given id is found in the system, the following details
+will be shown on the screen: id, firstname, lastname. If the given id is not found in the system an appropriate error message
+will be shown on the screen.
+
+- IMPLEMENT UPDATE AUTHOR
+As a user I should be able to update the details of an existing author.
+If the author is found by id in the system, I should be able to update the following data:
+            - last name
+            - creations
+The system will validate the following data:
+            - last name to be not blank and not empty
+            - creations to be not blank and not empty
+    If the update process fails the system will show an appropriate error message.
+If the author is not found by id in the system an appropriate error message will be shown.
+
+- IMPLEMENT DELETE AUTHOR
+As a user I should be able to delete and existing author by id from the system.
+If the given id is found in the system the author will be deleted and a message
+will be shown on the screen.
+If the given id is not found in the system an appropriate error message will be shown on the screen.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+- IMPLEMENT BOOK CREATION
+ As a user I should be able to add a new book with the following details: title, description, author and asign to an author. If the creation process is successful
+the system will allocate a unique id to the new book.
+    The system will validate the following data:
+            - author's id to be not bland and not empty
+            - title to be not blank and not empty
+            - description to be not blank and not empty
+            - author to be not blank and not empty, to be in the authors' list
+If the creation process fails the system will show an appropriate error message.
+
+- IMPLEMENT VIEW ALL BOOKS
+As a user I should be able to view all the existing books from the system.
+        I should be able to view a list where each line will contain: title, description and author.
+
+- IMPLEMENT VIEW BOOK BY ID
+As a user I should be able to view all the details of an existing book by id. If the given id is found in the system, the following details
+will be shown on the screen: title, description and author. If the given id is not found in the system an appropriate error message
+will be shown on the screen.
+
+- IMPLEMENT DELETE BOOK
+As a user I should be able to delete and existing book by id from the system.
+If the given id is found in the system the book will be deleted and a message
+will be shown on the screen.
+If the given id is not found in the system an appropriate error message will be shown on the screen.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+- IMPLEMENT CREATE REVIEWS
+As a user I should be able to add a new review with the following details: book, score, comment. If the creation process is successful
+   the system will allocate a review to an unique book.
+       The system will validate the following data:
+               - book's id to be not blank and not empty and to be present in the system
+               - score to be not blank and not empty
+               - comment to be not blank and not empty
+   If the creation process fails the system will show an appropriate error message.
+
+- IMPLEMENT VIEW ALL REVIEWS
+   As a user I should be able to view all the existing reviews from the system.
+           I should be able to view a list where each line will contain: book, score, comment.
